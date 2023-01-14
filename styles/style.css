@@ -72,6 +72,12 @@ main {
 .btn_icon {
   margin-left: 7px;
 }
+.banner_img {
+  background-image: url('../images/Circle_design_svg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .banner_img img {
   width: 440px;
   height: 414px;
