@@ -246,12 +246,39 @@ main {
   }
 }
 @media screen and (min-width: 689px) and (max-width: 992px) {
-  .header_section,
-  .banner_section,
-  .company_section,
-  .collection_section,
-  .featured_section,
-  .footer_section {
-    display: none;
+  .header_section {
+    width: 100%;
+  }
+  .header_links {
+    gap: 10px;
+  }
+  .banner_items {
+    flex-direction: column-reverse;
+  }
+  .banner_info {
+    width: 100%;
+    text-align: center;
+  }
+  .company_names {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+    margin-top: 100px;
+    padding: 10px 0;
+  }
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .featured_section {
+    width: 100%;
+    height: auto;
+  }
+  .featured_items {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .featured_info {
+    text-align: center;
   }
 }
