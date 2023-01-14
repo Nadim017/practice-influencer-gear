@@ -1,0 +1,257 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: o;
+  margin: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_section {
+  margin-top: 15px;
+}
+.header_items {
+  display: flex;
+  justify-content: space-around;
+}
+.header_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+.header_links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.header_links li {
+  list-style: none;
+}
+.link {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+.banner_section {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.banner_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+}
+.banner_info {
+  width: 582px;
+  height: 270px;
+  margin-top: -125px;
+}
+.banner_title {
+  font-weight: 700;
+  font-size: 52px;
+  color: #3a3a3a;
+}
+.banner_description {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+.banner_btn {
+  width: 196px;
+  height: 44px;
+  background: #e02c6d;
+  border-radius: 41px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+.btn_icon {
+  margin-left: 7px;
+}
+.banner_img img {
+  width: 440px;
+  height: 414px;
+}
+
+.company_section {
+  margin: 100px;
+}
+.company_names {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  width: 986.47px;
+  height: 39.61px;
+  padding: 40px 60px;
+}
+.company_name img {
+  width: 55px;
+  height: 30px;
+}
+.collection_title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.collection {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 14px 15px;
+}
+.collection_img img {
+  width: 300px;
+  height: 256px;
+}
+.collection_item_name {
+  font-weight: 500;
+  font-size: 28px;
+  color: #18191f;
+}
+.collection_item_price {
+  color: #000000;
+  font-weight: 400;
+  font-size: 24px;
+}
+.fa-star.filled,
+.unfilled {
+  color: #fb8200;
+}
+.rating {
+  font-weight: 700;
+  font-size: 14px;
+  color: #5e6366;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.pagination_item,
+.arrow_icon {
+  color: #e02c6d;
+}
+.featured_section {
+  width: 1110px;
+  height: 270px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.featured_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+}
+.featured_title {
+  font-weight: 700;
+  font-size: 38px;
+  color: #0a0826;
+}
+.featured_description {
+  font-weight: 700;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.featured_btn {
+  background: #e02c6d;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+}
+.footer_section {
+  background: #0a0826;
+  padding: 32px 0;
+}
+.footer_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+.footer_description {
+  color: #d9dbe1;
+  font-weight: 700;
+  font-size: 14px;
+}
+.footer_icon span {
+  color: #ffffff;
+  margin-left: 16px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 688px) {
+  .header_items {
+    flex-direction: column;
+  }
+  .header_links {
+    flex-direction: column;
+  }
+  .banner_items {
+    flex-direction: column-reverse;
+  }
+  .banner_img img {
+    width: 100%;
+  }
+  .banner_info {
+    width: 100%;
+    text-align: center;
+  }
+  .company_section {
+    width: 100%;
+  }
+  .company_names {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+    margin-top: 100px;
+    padding: 40px 0;
+  }
+
+  .collections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured_section {
+    width: 100%;
+    height: auto;
+  }
+  .featured_items {
+    flex-direction: column-reverse;
+  }
+  .featured_info {
+    text-align: center;
+  }
+
+  .footer_section {
+    width: 100%;
+    padding: 0;
+  }
+  .footer_items {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .header_section,
+  .banner_section,
+  .company_section,
+  .collection_section,
+  .featured_section,
+  .footer_section {
+    display: none;
+  }
+}
