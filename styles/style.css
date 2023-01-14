@@ -213,6 +213,7 @@ main {
   }
   .company_section {
     width: 100%;
+    margin: 0;
   }
   .company_names {
     flex-wrap: wrap;
@@ -259,12 +260,15 @@ main {
     width: 100%;
     text-align: center;
   }
+  .company_section {
+    margin: 0;
+  }
   .company_names {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-
-    margin-top: 100px;
+    gap: 30px;
+    margin: 100px 0;
     padding: 10px 0;
   }
   .collections {
